@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>Exercise4.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6897bb;}
+.s3 { color: #6a8759;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Exercise4.java</font>
+</center></td></tr></table>
+<pre><span class="s0">import </span><span class="s1">java.util.Scanner</span><span class="s0">;</span>
+
+<span class="s0">public class </span><span class="s1">Exercise4 {</span>
+    <span class="s0">public static void </span><span class="s1">main(String[] args) {</span>
+        <span class="s0">int </span><span class="s1">mul</span><span class="s0">, </span><span class="s1">i = </span><span class="s2">1</span><span class="s0">, </span><span class="s1">j = </span><span class="s2">1</span><span class="s0">, </span><span class="s1">n = </span><span class="s2">1</span><span class="s0">;</span>
+
+        <span class="s1">Scanner sc = </span><span class="s0">new </span><span class="s1">Scanner(System.in)</span><span class="s0">;</span>
+        <span class="s0">if </span><span class="s1">(n != </span><span class="s2">0</span><span class="s1">) {</span>
+            <span class="s1">System.out.print(</span><span class="s3">&quot;Please input a number to print the Multiplication Table [0 to terminate]:&quot;</span><span class="s1">)</span><span class="s0">;</span>
+            <span class="s1">n = sc.nextInt()</span><span class="s0">;</span>
+            <span class="s0">if </span><span class="s1">(n &lt; </span><span class="s2">0 </span><span class="s1">|| n &gt; </span><span class="s2">9</span><span class="s1">) {</span>
+                <span class="s1">System.out.print(</span><span class="s3">&quot;Please input a number between [1,9]&quot;</span><span class="s1">)</span><span class="s0">;</span>
+            <span class="s1">} </span><span class="s0">else </span><span class="s1">{</span>
+                <span class="s0">while </span><span class="s1">(i &lt;= n) {</span>
+                    <span class="s1">j = </span><span class="s2">1</span><span class="s0">;</span>
+                    <span class="s0">while </span><span class="s1">(j &lt;= i) {</span>
+                        <span class="s1">mul = i * j</span><span class="s0">;</span>
+                        <span class="s1">System.out.print(j + </span><span class="s3">&quot;*&quot; </span><span class="s1">+ i + </span><span class="s3">&quot;=&quot; </span><span class="s1">+ mul + </span><span class="s3">&quot; &quot;</span><span class="s1">)</span><span class="s0">;</span>
+                        <span class="s1">j++</span><span class="s0">;</span>
+                    <span class="s1">}</span>
+                    <span class="s1">System.out.println()</span><span class="s0">;</span>
+                    <span class="s1">i++</span><span class="s0">;</span>
+                <span class="s1">}</span>
+            <span class="s1">}</span>
+
+        <span class="s1">}</span>
+    <span class="s1">}</span>
+<span class="s1">}</span>
+
+</pre>
+</body>
+</html>
